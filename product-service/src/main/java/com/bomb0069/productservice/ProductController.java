@@ -7,8 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class ProductController {
 
     @RequestMapping("/")
-    public String index() {
-        return "Greetings from Spring Boot!";
+    public Product[] index() {
+        Product[] products =  { new Product(1, "Lay Bar-B-Q") ,new Product(2, "Lay Onion") ,new Product(1, "Lay Classic") };
+        return products;
     }
 
 }
