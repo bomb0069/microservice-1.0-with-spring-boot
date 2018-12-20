@@ -1,7 +1,12 @@
-"# microservice-1.0-with-spring-boot" 
+## Project
+"# microservice-1.0-with-spring-boot"
+
+## Test all-service project
+```
+$./mvnw clean test
+```
 
 ## Build all-service project
-
 ```
 $./mvnw clean package -DskipTests=true
 ```
