@@ -4,13 +4,17 @@ services:
     build:
       context: product-service/
     ports:
-      - 8088:8000
+      - 8088:8002
     container_name: product-service
+    environment:
+      - SERVER_PORT=8002
   store-service:
     build:
       context: store-service/
     privileged: true
     user: root
     ports:
-      - 8089:8000
+      - 8089:8003
     container_name: store-service
+    environment:
+      - SERVER_PORT=8003
