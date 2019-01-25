@@ -26,3 +26,6 @@
 
 ### VSCODE ###
 .vscode/
+
+## MAC ##
+.DS_Store
